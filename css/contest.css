@@ -1,0 +1,12 @@
+/* load fonts */
+
+.page-container {
+    max-width:1200px;
+    margin:0 auto;
+}
+html {
+    box-sizing:border-box;
+}
+*, *::before, *::after {
+    box-sizing:inherit;
+}
