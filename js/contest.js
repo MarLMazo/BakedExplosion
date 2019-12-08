@@ -1,8 +1,5 @@
 //to do 
-// jquery onclick for all the boxes
-// todo - method which will apply the user changes
-// todo - computer method
-// todo - win check method after 5 steps 
+//add comments
 
 // defining the win condition
 var winMoves = [
@@ -18,27 +15,29 @@ var winMoves = [
 
 var boardMoves = [0,0,0,0,0,0,0,0,0,0];
 var turns = 0;
+result_element = document.getElementById("game_result")
 
 function checkWin()
 {
-    var win;
+    var win = false;
     for (i = 0; i < winMoves.length; i++)
     {
         if (boardMoves[winMoves[i][0]] == 'o' && boardMoves[winMoves[i][1]] == 'o' && boardMoves[winMoves[i][2]] == 'o')
         {
-            var win = confirm("Computer wins!! Better luck next time\nClick okay to play again");
+            result_element.innerHTML = "Computer, wins!\nClick on reset to play again!"
+            win = true;
         }
         else if (boardMoves[winMoves[i][0]] == 'x' && boardMoves[winMoves[i][1]] == 'x' && boardMoves[winMoves[i][2]] == 'x')
         {
-            var win = confirm("You win!! I better improve my code :(");
+            result_element.innerHTML = "You win!! Congratulations!"
+            win = true;
         }
     }
     if (win){
-        boardMoves = [0,0,0,0,0,0,0,0,0,0];
-        turns = 0;
+        result_element.style.display = "block";
         for (i=1; i<10; i++){
-            position = document.getElementById(i);
-            position.innerHTML = '';
+            div = document.getElementById(i);
+            div.removeEventListener("onclick", checkClick())
         }
     }
     return win;
@@ -87,15 +86,14 @@ function smartComputer()
 {
     if (turns >= 9) 
        {
-        var draw = confirm("Draw!!\nDo you wanna play again?");
-        if (draw){
-            boardMoves = [0,0,0,0,0,0,0,0,0,0];
-            turns = 0;
-            for (i=1; i<10; i++){
-                position = document.getElementById(i);
-                position.innerHTML = '';
-            } 
+        result_element.innerHTML = "Draw! What a smart game!\nClick on reset to play again!"
+        result_element.style.display = "block";
+        tunrs ++;
+        for (i=1; i<10; i++){
+            div = document.getElementById(i);
+            div.removeEventListener("onclick", checkClick())
         }
+        return false;
        }
     if (boardMoves[5] === 0)
     {
@@ -113,7 +111,6 @@ function smartComputer()
         do 
         {
             debugger
-            console.log("randp,,,,,,eeeeeee")
             computerMove = Math.ceil(Math.random() * 9);
         }
         while(boardMoves[computerMove] != 0);
@@ -124,3 +121,14 @@ function smartComputer()
     turns ++;
     checkWin();
 }
+
+document.getElementById("reset-button").onclick = function (){
+    boardMoves = [0,0,0,0,0,0,0,0,0,0];
+    turns = 0;
+    for (i=1; i<10; i++){
+        position = document.getElementById(i);
+        position.innerHTML = '';
+    }
+    result_element.innerHTML = ""
+    result_element.style.display = "none";
+    }
