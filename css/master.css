@@ -1,0 +1,222 @@
+body {
+    box-sizing: border-box;
+}
+header, footer {
+    background-color: #FFD3B5;
+    clear: both;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+header #logo{
+    width:150px;
+    height:auto;
+    position:relative;
+    margin:0 50% 0 40%;
+}
+.litem {
+    margin-left: 10%;
+    float: left;
+}
+
+.ritem {
+    margin-right: 10%;
+    float: right;
+}
+
+header ul{
+    list-style-type:none;
+    display:flex;
+    position:relative;
+    padding:0;
+}
+header ul li{
+    margin:-6em 0 5em 0;
+    padding:0 1.5em 0 1.5em;
+}
+header ul li a{
+    text-align:center;
+    font-family: 'Courgette', cursive;
+    text-decoration:none;
+    font-size:1.7em;
+    color:#000000;
+    font-weight:100;
+}
+
+/*best seller css*/
+.best_seller {
+    margin: 0 auto;
+    background: #FF8C94;
+}
+
+.flex-container-best-seller {
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 100%;
+    font-family: 'Courgette',cursive;
+    height: 374px;
+}
+
+.best_seller h2 {
+    font-family: 'Courgette',sens-serif;
+    text-align: center;
+}
+
+.best_seller p {
+    font-family: 'Raleway',sens-serif;
+    text-align: center;
+}
+
+[id^="section-"] {
+    flex: 1 0 0;
+    max-height: 25.7%;
+    clear: both;
+}
+
+.best_sellers_images {
+    width: 300px;
+    margin-left: 4.6em;
+}
+
+.details {
+    text-align: center;
+}
+
+.socialmedia {
+    padding: 1em;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.social {
+    flex: 1 0 0;
+    position: relative;
+    padding: 1em;
+}
+
+.social-img-wrap {
+    border: 1px solid #000;
+    height: 25vw;
+}
+
+.social img {
+    height: 100%;
+    width: 100%;
+}
+
+.social-descrp {
+    position: absolute;
+    top: -1000%;
+    padding: 1em;
+    transform: translateY(-50%);
+}
+
+    .social-descrp span {
+        padding-right: 0.5em;
+    }
+
+.social:hover .social-descrp {
+    top: 50%;
+}
+
+.social:hover img {
+    opacity: 0.3;
+}
+
+.list-comments::before {
+    content: "\f075";
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 900;
+    color: gray;
+}
+
+.like-comments::before {
+    content: "\f004";
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 900;
+    color: red;
+}
+
+.social-comment span {
+    font-weight: 600;
+}
+
+.social-tags {
+    padding: 0.5em 0;
+}
+
+.bakerySocial {
+    padding: 1em;
+    background-color: #D0ECC5;
+}
+
+    .bakerySocial h2 {
+        text-align: center;
+        font-family: 'Courgette', cursive;
+    }	
+
+.footer_main {
+    
+    display: flex;
+    flex-flow: row wrap;
+}
+
+[id^="section-"] {
+    flex: 1 0 0;
+    
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-flow:column;
+    text-align:center;
+}
+
+footer ul .col_head{
+    font-size:1.3em;
+    margin-bottom:5%;
+    text-transform: uppercase;
+    font-family:'Patrick Hand';
+}
+
+footer ul li{
+    padding-bottom:5px;
+    font-family:'Sulphur Point';
+    font-weight:lighter;
+}
+
+footer input[type="email"] {
+    background:transparent;
+    border:1px solid #000000;
+    border-radius:5px;
+    height:30px;
+}
+footer input::-webkit-input-placeholder {
+    color: #ffffff;
+    padding:10px;
+    text-transform: uppercase;
+}
+footer button[type="submit"]{
+    background:#000000;
+    border:none;
+    color:#ffffff;
+    padding:10px;
+    width:50%;
+}
+#section-2 ul li:last-child{
+    text-decoration:underline;
+}
+
+footer #last_row{
+    margin: 0 5% 0 5%;
+}
+footer #smedia_icons {
+    margin-top: -3%;
+    margin-left: 85%;
+}
+footer #smedia_icons img{
+    border:1px solid #000000;
+    padding:0.2em;
+}

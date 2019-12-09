@@ -1,0 +1,40 @@
+.best_seller {
+    max-width:1200px;
+    margin:0 auto;
+    background: #FFD3B5;
+}
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+.flex-container-best-seller {
+    display:flex;
+    flex-flow:row wrap;
+    max-width: 100%;
+    font-family:'Courgette',cursive;
+    background: #FFD3B5;
+    height: 374px;
+}
+.best_seller h2 {
+    font-family: 'Courgette',sens-serif;
+    text-align: center;
+}
+.best_seller p {
+    font-family: 'Raleway',sens-serif;
+    text-align: center;
+}
+[id^="section-"] {
+    flex: 1 0 0;
+    max-height: 25.7%;
+    clear: both;
+}
+.best_sellers_images {
+    width: 300px;
+    margin-left: 2.8em;
+}
+.details {
+    text-align: center;
+}
+
