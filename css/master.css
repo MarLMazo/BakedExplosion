@@ -1,4 +1,4 @@
-body {
+html {
     box-sizing: border-box;
 }
 header, footer {
@@ -82,26 +82,28 @@ header ul li a{
     text-align: center;
 }
 
+/* Social Media*/
 .socialmedia {
     padding: 1em;
-    display: flex;
-    flex-flow: row wrap;
+    margin:auto;
+    text-align: center;
 }
 
 .social {
-    flex: 1 0 0;
+    display: inline-block;
     position: relative;
     padding: 1em;
 }
 
 .social-img-wrap {
     border: 1px solid #000;
-    height: 25vw;
+    height: 300px;
+    width:300px;
+    overflow: hidden;
 }
 
 .social img {
     height: 100%;
-    width: 100%;
 }
 
 .social-descrp {
@@ -109,11 +111,12 @@ header ul li a{
     top: -1000%;
     padding: 1em;
     transform: translateY(-50%);
+    text-align: left;
 }
 
-    .social-descrp span {
-        padding-right: 0.5em;
-    }
+.social-descrp span {
+    padding-right: 0.5em;
+}
 
 .social:hover .social-descrp {
     top: 50%;
@@ -150,10 +153,14 @@ header ul li a{
     background-color: #D0ECC5;
 }
 
-    .bakerySocial h2 {
-        text-align: center;
-        font-family: 'Courgette', cursive;
-    }	
+.bakerySocial h2 {
+    text-align: center;
+    font-family: 'Courgette', cursive;
+}	
+
+img[src="images/muffins.png"]{
+	transform: translateX(-40%);
+}
 
 .footer_main {
     
