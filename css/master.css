@@ -56,7 +56,7 @@ header ul li a{
 
 /*best seller css*/
 .best_seller {
-    clear:both;
+
     margin: 0 auto;
     background: #FF8C94;
 }
@@ -82,12 +82,12 @@ header ul li a{
 [id^="section-"] {
     flex: 1 0 0;
     max-height: 25.7%;
-    clear: both;
+    text-align: center;
 }
 
 .best_sellers_images {
     width: 300px;
-    margin-left: 4.6em;
+   
 }
 
 .details {
