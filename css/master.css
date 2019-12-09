@@ -1,39 +1,50 @@
 html {
     box-sizing: border-box;
 }
+
 header, footer {
     background-color: #FFD3B5;
-    clear: both;
+
 }
+
 *, *::before, *::after {
     box-sizing: inherit;
 }
+
+header{
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
 header #logo{
     width:150px;
     height:auto;
-    position:relative;
-    margin:0 50% 0 40%;
-}
-.litem {
-    margin-left: 10%;
-    float: left;
 }
 
-.ritem {
-    margin-right: 10%;
-    float: right;
+.logo-wrap{
+    flex: 1 0 0;  
+}
+
+.litem,.ritem {
+    flex: 2 0 0;
+    align-self: flex-end;
+}
+
+.litem {
+  order: -1;
 }
 
 header ul{
     list-style-type:none;
-    display:flex;
-    position:relative;
     padding:0;
 }
+
 header ul li{
-    margin:-6em 0 5em 0;
-    padding:0 1.5em 0 1.5em;
+    display: inline-block;
+    padding:0 1.5em;
 }
+
 header ul li a{
     text-align:center;
     font-family: 'Courgette', cursive;
@@ -45,6 +56,7 @@ header ul li a{
 
 /*best seller css*/
 .best_seller {
+    clear:both;
     margin: 0 auto;
     background: #FF8C94;
 }
