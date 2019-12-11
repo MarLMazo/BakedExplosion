@@ -172,3 +172,20 @@
 img[src="images/muffins.png"]{
 	transform: translateX(-40%);
 }
+
+.carousel a{
+    text-decoration: none;
+    display: block;
+    width: 10em;
+    height: 3em;
+    background: #4E9CAF;
+    padding: 1em;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: absolute;
+    top:50%;
+    left: 10%;
+}
