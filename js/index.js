@@ -43,7 +43,6 @@ carousel_slide.addEventListener('transitionend', () =>{
 function showDetails(divid){
     if (divid === "div1"){
         var one = document.getElementById(divid).innerHTML = "Starting from $2";
-        one.element.classList.add("shadow-pop-tr");
     }
     else if (divid === "div2"){
         document.getElementById(divid).innerHTML = "Starting from $3";

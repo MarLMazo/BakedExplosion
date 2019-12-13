@@ -1,0 +1,43 @@
+#main_cover {
+    position: relative;
+    font-family: 'Courgette',cursive;
+    text-align: center;
+    margin: -4px;
+}
+
+#cover_image {
+    max-width: 100%;
+    margin: 0px;
+}
+
+#image-text {
+    position: absolute;
+    top: 3.5em;
+    background-color: #A8E6CE;
+    color: white;
+    width: 100%;
+    font-size: 1.20em;
+}
+
+#image-text p {
+    font-family: 'Raleway',sens-serif;
+    font-size: 0.9em;
+}
+
+#history {
+    background-color: #FF8C94;
+    height: 315px;
+    font-family: 'Courgette',cursive;
+    text-align: center;
+    color: white;
+    font-size: 1.20em;
+}
+
+#history h2{
+    margin: 0px;
+    padding-top: 1em;
+}
+
+#history p{
+    font-family: 'Raleway',sens-serif;
+}
