@@ -1,0 +1,93 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+#outer_container{
+    max-width:1200px;
+    padding-top:2em;
+    margin:0 auto;
+    display:flex;
+    flex-flow:column ;
+}
+
+#page_heading{
+    text-align: center;
+    padding:1em;
+}
+.contact_inner_container{
+    padding: 1em;
+    display:flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+.address{
+    display:flex;
+    flex-flow: column;
+    justify-content: center;
+    text-align: center;
+}
+.address h3,.address p{
+    padding-top:1em;
+}
+.location{
+    padding:1em;
+}
+#main{
+    padding:2em 0;
+    display:flex;
+    flex-flow:row;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+}
+#form_container{
+    flex:3 0 0;
+}
+#contact_container{
+    flex:1 0 0;
+}
+#contact_form{
+    display:flex;
+    flex-flow:row wrap;
+}
+.form_field{
+    flex: 1 0 0;
+    padding: 1em;
+    padding-left:0px;
+    display: flex;
+    flex-flow:column;
+    justify-content: space-between;
+}
+#name,#email{
+    width: 50%;
+    height:2em;
+    padding:0.5em;
+    background-color: rgb(221, 208, 208);
+    border-style: none;
+}
+#message_field{
+    flex: 1 0 100%;
+    
+}
+#message{
+    height:150px;
+    width:75%;
+    padding:0.5em;
+    background-color: rgb(221, 208, 208);
+    border-style:none;
+}
+.submit_button{
+    padding:1em;
+    width:75%;
+    border-style:none;
+}
+
+#location_button{
+    margin:1em;
+    width: 100px;
+    height:30px;
+    border-radius: 5%;
+    border-style: none;
+    background-color: rgb(215, 128, 223);
+}
