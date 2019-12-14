@@ -110,9 +110,13 @@ ul{
 h3, h4 {
     font-weight: normal;
     text-transform: uppercase;
-    font-family: Kurale;
+    font-family: Courgette,cursive;
     font-weight: lighter;
     word-spacing: 0.5em;
+}
+
+.desc h4 {
+    font-family: Raleway;
 }
 
 li div {
