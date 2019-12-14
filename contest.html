@@ -7,103 +7,164 @@
         <title>Tic-tac-toe</title>
         <link rel="stylesheet" type="text/css" href="css/master.css" />
         <link rel="stylesheet" type="text/css" href="css/contest.css">
-        <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Montserrat:400,700" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Courgette|Kurale|Montserrat|Raleway|Sulphur+Point&display=swap" rel="stylesheet"/>
         <script src="https://kit.fontawesome.com/150aec7788.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header>
-                <div class="logo-wrap">
-                    <img id="logo" src="images/logo.png" alt="logo of Baked Explosion." />
-                </div>
-                <ul class="litem">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Menu</a></li>
-                    <li><a href="#">Specials</a></li>
-                </ul>
-                <ul class="ritem">
-                    <li><a href="#">Booking</a></li>
-                    <li><a href="about-us.html">About Us</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
+            <div class="logo-wrap">
+                <img id="logo" src="images/logo.png" alt="logo of Baked Explosion." />
+            </div>
+            <ul class="litem">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li class="dropdown"><a class="submenu">Specials</a>
+                    <ul class="dropdown-content" >
+                        <li><a href="specials.html" >Daily Offers</a></li>
+                        <li><a href="giftcards.html">Gift Card</a></li>
+                        <li><a href="contest.html">Play to Win</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="ritem">
+                <li><a href="booking.html">Booking</a></li>
+    
+                <li class="dropdown">
+                    <a class="submenu">Contact Us</a>
+                    <ul class="dropdown-content">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="locations.html">Our Location</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                    </ul>
+                </li>
+                <li><a href="about-us.html">About Us</a></li>
+            </ul>
         </header>
-        <div class="page-container">
-            <section id="game-container">
-                <h1>Tic-tac-toe</h1>
-                <div id="game_result">
-                </div>
-                <div id="game-board">   
-                    <div id="row-1">
-                        <div class="box-1" id="1" onclick="checkClick('1');"></div>
-                        <div class="box-2" id="2" onclick="checkClick('2');"></div>
-                        <div class="box-1" id="3" onclick="checkClick('3');"></div>
+        <main id="game-container">
+            <h1>Tic-tac-toe</h1>
+            <div class="shine" id="game_result">
+            </div>
+            <div id="intro">
+                <p>Ready? Win this tic-tac-toe game against our computer to win gift card worth of $5000. Good luck! 🥳</p>
+                <button id="intro_button" type="button">Got it!</button>
+            </div>
+            <div id="game-board">   
+                <div id="row-1">
+                    <div class="box-1" id="1" onclick="checkClick('1');">
+                        <div class="box-inner">
+                            <div class="front-box"></div>
+                            <div class="back-box"></div>
+                        </div>
                     </div>
-                    <div id="row-2">
-                        <div class="box-2" id="4" onclick="checkClick('4');"></div>
-                        <div class="box-1" id="5" onclick="checkClick('5');"></div>
-                        <div class="box-2" id="6" onclick="checkClick('6');"></div>
+                    <div class="box-2" id="2" onclick="checkClick('2');">
+                        <div class="box-inner">
+                            <div class="front-box"></div>
+                            <div class="back-box"></div>
+                        </div>
                     </div>
-                    <div id="row-3">
-                        <div class="box-1" id="7" onclick="checkClick('7');"></div>
-                        <div class="box-2" id="8" onclick="checkClick('8');"></div>
-                        <div class="box-1" id="9" onclick="checkClick('9');"></div>
+                    <div class="box-1" id="3" onclick="checkClick('3');">
+                        <div class="box-inner">
+                            <div class="front-box"></div>
+                            <div class="back-box"></div>
+                        </div>
                     </div>
                 </div>
-                <div>
-                    <button id="reset-button" type="button">Reset</button>
+                <div id="row-2">
+                    <div class="box-2" id="4" onclick="checkClick('4');">
+                        <div class="box-inner">
+                            <div class="front-box"></div>
+                            <div class="back-box"></div>
+                        </div>
+                    </div>
+                    <div class="box-1" id="5" onclick="checkClick('5');">
+                        <div class="box-inner">
+                            <div class="front-box"></div>
+                            <div class="back-box"></div>
+                        </div>
+                    </div>
+                    <div class="box-2" id="6" onclick="checkClick('6');">
+                        <div class="box-inner">
+                            <div class="front-box"></div>
+                            <div class="back-box"></div>
+                        </div>
+                    </div>
                 </div>
-                
-            </section>
-            <footer>
-                <div class="footer_main">
-                    <section id="section-1">
+                <div id="row-3">
+                    <div class="box-1" id="7" onclick="checkClick('7');">
+                        <div class="box-inner">
+                            <div class="front-box"></div>
+                            <div class="back-box"></div>
+                        </div>
+                    </div>
+                    <div class="box-2" id="8" onclick="checkClick('8');">
+                        <div class="box-inner">
+                            <div class="front-box"></div>
+                            <div class="back-box"></div>
+                        </div>
+                    </div>
+                    <div class="box-1" id="9" onclick="checkClick('9');">
+                        <div class="box-inner">
+                            <div class="front-box"></div>
+                            <div class="back-box"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="reset_div">
+                <button id="reset-button" type="button">Reset</button>
+            </div>    
+        </main>
+        <footer>
+            <div class="footer_main">
+                <section id="section-1">
+                    <ul>
+                        <li class="col_head">Shop</li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="locations.html">Visit Us</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="sitemap.html">Site Map</a></li>
+                    </ul>
+                </section>
+                <section id="section-2">
+                    <ul>
+                        <li class="col_head">We are available</li>
+                        <li>Mon-Friday : 8am - 8pm</li>
+                        <li>Saturday : 8am - 7pm</li>
+                        <li>Sunday : 9am - 6pm</li>
+                        <li>Holiday hours may vary.!</li>
+                    </ul>
+                </section>
+                <section id="section-3">
+                    <ul>
+                        <li class="col_head">Visit Us</li>
+                        <li>#123 Jump Street,</li>
+                        <li>Toronto, ON, A1A 1A1</li>
+                        <li>contactus@bakedexplosion.com</li>
+                        <li>+1(123)456-7890</li>
+                    </ul>
+                </section>
+                <section id="section-4">
+                    <form>
                         <ul>
-                            <li class="col_head">Shop</li>
-                            <li><a href="index.html">Home</a></li>
-                            <li>Menu</li>
-                            <li><a>Visit Us</a></li>
-                            <li><a>Careers</a></li>
+                            <li class="col_head"><label>STAY UPDATED</label></li>
+                            <li><input type="email" placeholder="Email Address" /></li>
+                            <li><button type="submit">SUBSCRIBE NOW</button></li>
                         </ul>
-                    </section>
-                    <section id="section-2">
-                        <ul>
-                            <li class="col_head">We are available</li>
-                            <li>Mon-Friday : 8am - 8pm</li>
-                            <li>Saturday : 8am - 7pm</li>
-                            <li>Sunday : 9am - 6pm</li>
-                            <li>Holiday hours may vary.!</li>
-                        </ul>
-                    </section>
-                    <section id="section-3">
-                        <ul>
-                            <li class="col_head">Visit Us</li>
-                            <li>#123 Jump Street,</li>
-                            <li>Toronto, ON, A1A 1A1</li>
-                            <li>contactus@bakedexplosion.com</li>
-                            <li>+1(123)456-7890</li>
-                        </ul>
-                    </section>
-                    <section id="section-4">
-                        <form>
-                            <ul>
-                                <li class="col_head"><label>STAY UPDATED</label></li>
-                                <li><input type="email" placeholder="Email Address" /></li>
-                                <li><button type="submit">SUBSCRIBE NOW</button></li>
-                            </ul>
-                        </form>
-                    </section>
+                    </form>
+                </section>
+            </div>
+            <div id="last_row">
+                <p>&copy; 2019 by Baked Explosion and team</p>
+                <div id="smedia_icons">
+                    <img src="images/social_media_icons/facebook.png" alt="facebook icon link to facebook account of baked explosions." />
+                    <img src="images/social_media_icons/instagram.png" alt="instagram icon link to facebook account of baked explosions." />
+                    <img src="images/social_media_icons/snapchat.png" alt="snapchat icon link to facebook account of baked explosions." />
+                    <img src="images/social_media_icons/youtube.png" alt="youtube icon link to facebook account of baked explosions." />
                 </div>
-                <div id="last_row">
-                    <p>&copy; 2019 by Baked Explosion and team</p>
-                    <div id="smedia_icons">
-                        <img src="images/social_media_icons/facebook.png" alt="facebook icon link to facebook account of baked explosions." />
-                        <img src="images/social_media_icons/instagram.png" alt="instagram icon link to facebook account of baked explosions." />
-                        <img src="images/social_media_icons/snapchat.png" alt="snapchat icon link to facebook account of baked explosions." />
-                        <img src="images/social_media_icons/youtube.png" alt="youtube icon link to facebook account of baked explosions." />
-                    </div>
-                </div>
-            </footer>
+            </div>
+        </footer>
         </div>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
         <script src="js/contest.js"></script>
     </body>
 </html>

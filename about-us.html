@@ -18,16 +18,29 @@
         </div>
         <ul class="litem">
             <li><a href="index.html">Home</a></li>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Specials</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li class="dropdown"><a class="submenu">Specials</a>
+                <ul class="dropdown-content" >
+                    <li><a href="specials.html" >Daily Offers</a></li>
+                    <li><a href="giftcards.html">Gift Card</a></li>
+                    <li><a href="contest.html">Play to Win</a></li>
+                </ul>
+            </li>
         </ul>
         <ul class="ritem">
-            <li><a href="#">Booking</a></li>
+            <li><a href="booking.html">Booking</a></li>
+
+            <li class="dropdown">
+                <a class="submenu">Contact Us</a>
+                <ul class="dropdown-content">
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="locations.html">Our Location</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                </ul>
+            </li>
             <li><a href="about-us.html">About Us</a></li>
-            <li><a href="#">Contact Us</a></li>
         </ul>
     </header>
-
     <main>
         <div id="main_cover">
             <!--Image credit unsplash.com-->
@@ -41,6 +54,30 @@
             </div>
         </div>
     </main>
+    <h2 id="team">Our Team</h2>
+    <div class="flex-container">
+        <!--Images are taken from https://www.google.com/search?rlz=1C1CHBF_enIN809IN809&tbm=isch&sxsrf=ACYBGNQKG9bxPZno1R4LAy-TJTr3zkRImA%3A1576284662347&sa=1&ei=9jH0XZfhFNautQbyv4-AAQ&q=cartoon+characters&oq=cartoon&gs_l=img.3.0.0i67l10.2035153.2036639..2037629...2.0..0.115.754.9j1......0....1..gws-wiz-img.....10..0i8i30j35i39j35i362i39j0.cN8NEfeqlTc#imgrc=t6phIC0YBov8GM:-->
+        <div>
+            <img class="about_images" src="images/Phineas_Flynn.png" alt="Image of Yash as cartoon character" onmouseover="showDetails('div1');" onmouseout="hideDetails('div1');">
+            <div id="div1" class="details"></div>
+        </div>
+        <div>
+            <img class="about_images" src="images/BUTTERCUP.png" alt="Image of Krishna as cartoon character" onmouseover="showDetails('div2');" onmouseout="hideDetails('div2');">
+            <div id="div2" class="details"></div>
+        </div>
+        <div>
+            <img class="about_images" src="images/c.png" alt="Image of Marl as cartoon character" onmouseover="showDetails('div3');" onmouseout="hideDetails('div3');">
+            <div id="div3" class="details"></div>
+        </div>
+        <div>
+            <img class="about_images" src="images/Tweety.png" alt="Image of Sukhdeep as cartoon character" onmouseover="showDetails('div4');" onmouseout="hideDetails('div4');">
+            <div id="div4" class="details"></div>
+        </div>
+        <div>
+            <img class="about_images" src="images/simpsons_PNG64-872x1024.png" alt="Image of Amit as cartoon character" onmouseover="showDetails('div5');" onmouseout="hideDetails('div5');">
+            <div id="div5" class="details"></div>
+        </div>
+      </div>
     <section id="history">
         <h2>Our History</h2>
         <p>One day Sukhdeep, Krishna, Marl, Amit and Yash decided to buy a property for their business. Initially there
@@ -64,9 +101,10 @@
                 <ul>
                     <li class="col_head">Shop</li>
                     <li><a href="index.html">Home</a></li>
-                    <li>Menu</li>
-                    <li><a>Visit Us</a></li>
-                    <li><a>Careers</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="locations.html">Visit Us</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="sitemap.html">Site Map</a></li>
                 </ul>
             </section>
             <section id="section-2">
@@ -100,14 +138,10 @@
         <div id="last_row">
             <p>&copy; 2019 by Baked Explosion and team</p>
             <div id="smedia_icons">
-                <img src="images/social_media_icons/facebook.png"
-                    alt="facebook icon link to facebook account of baked explosions." />
-                <img src="images/social_media_icons/instagram.png"
-                    alt="instagram icon link to facebook account of baked explosions." />
-                <img src="images/social_media_icons/snapchat.png"
-                    alt="snapchat icon link to facebook account of baked explosions." />
-                <img src="images/social_media_icons/youtube.png"
-                    alt="youtube icon link to facebook account of baked explosions." />
+                <img src="images/social_media_icons/facebook.png" alt="facebook icon link to facebook account of baked explosions." />
+                <img src="images/social_media_icons/instagram.png" alt="instagram icon link to facebook account of baked explosions." />
+                <img src="images/social_media_icons/snapchat.png" alt="snapchat icon link to facebook account of baked explosions." />
+                <img src="images/social_media_icons/youtube.png" alt="youtube icon link to facebook account of baked explosions." />
             </div>
         </div>
     </footer>
