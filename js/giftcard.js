@@ -2,6 +2,8 @@
 window.onload = pageReady;
 
 function pageReady() {
+
+    //storing the data that is retrived from html 
     var bigImage = document.getElementById("bigimage");
 
     var image1 = document.getElementById("img1");
@@ -19,17 +21,19 @@ function pageReady() {
     image4.onclick = switchPic4;
     image5.onclick = switchPic5;
     
-
+    //function to change background of button
     $('button').hover(
         function () { $(this).css({ 'color': '#ffffff', 'background': '#000000' }); },
         function () { $(this).css({ 'color': '#000000', 'background': 'transparent' }); }
     );
 
+    //function to change the border of the input box
     $('input,textarea').hover(
         function () { $(this).css({ 'border-color': '#FF8C94' }); },
         function () { $(this).css({ 'border-color': '#000000' }); }
     );
 
+    //Response after the submission of form
     function processForm() {
         alert("Thank You for Shopping.");
         return false;
@@ -37,6 +41,7 @@ function pageReady() {
 
     document.getElementById("user_txt").value = "Thank You";
 
+    //function to see the changes on the giftcard
     $('#demo').click(function () {
         //alert("show changes");
 
@@ -47,6 +52,7 @@ function pageReady() {
         
     });
 
+    //functions that will replace the default giftcard to selected card
     function switchPic1() {
         bigImage.src = image1.src;
     }
@@ -66,7 +72,4 @@ function pageReady() {
     function switchPic5() {
         bigImage.src = image5.src;
     }
-
-
-    
 }
