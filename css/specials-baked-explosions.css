@@ -8,12 +8,14 @@ html{
 }
 main{
     background-color:#D0ECC5;
+    font-family: 'Raleway', sans-serif;
 }
 #s-h2{
     padding:1em;
     margin:0;
     color:black;
     text-decoration:underline #FF8C94;
+    font-family: 'Courgette', cursive;
     
 }
 .info{
@@ -26,14 +28,17 @@ main{
     padding:1em;
     text-align: center;
     margin:0;
+    font-family: 'Courgette', cursive;
 }
 #tues-h2,#thurs-h2,#sat-h2{
     background-color:#FFD3B5;
     padding:1em;
     text-align:center;
     margin:0;
+    font-family: 'Courgette', cursive;
     
 }
 p{
     text-align:center;
+    font-family: 'Raleway', sans-serif;
 }

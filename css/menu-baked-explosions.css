@@ -7,31 +7,36 @@ html{
 }
 main{
     position:relative;
+    font-family: 'Raleway', sans-serif;
 }
 h2{
-    
+    font-family: 'Courgette', cursive;
     margin:0;
     text-align:center;
+    background-color: #ffffff;
+    padding:0.5em 0 0.5em 0;
 }
+
 #box{
     position:absolute;
     max-width:800px;
     margin-left: 13em;
     display:none;
     margin-top: 5em;
-    height: 7em;
+    height: 9em;
     padding:2em;
     background-color: #c9e1e0;
     border: solid white 1em;
     font-size:18px;
+    
 }
 #container{
-    max-width:1200px;
+    max-width:100%;
     
-    margin:3em auto;
+    /* margin:3em auto; */
     font-size:20px;
     font-weight:bold;
-    box-shadow:12px 10px 15px 7px #E488FF;
+    /* box-shadow:12px 10px 15px 7px #E488FF; */
     
     
 }
@@ -45,14 +50,14 @@ main img {
   #section1, #section3,#section5{
       background-color:#D0ECC5;
       color:rgb(250, 82, 93);
-      height:6em;
+      height:8em;
       
 
   }
   #section2,#section4{
       background-color:#FFAAA5;
       color:rgb(68, 114, 49);
-      height:6em;
+      height:8em;
   }
   
 
@@ -90,6 +95,9 @@ main img {
   }
   #section5 img{
       margin-left:21em;
+  }
+  li{
+      margin-bottom: 2%;
   }
  
   
