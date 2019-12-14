@@ -86,7 +86,7 @@ ul{
 h2 {
     text-align: center;
     text-transform: uppercase;
-    font-family: Kurale;
+    font-family: Courgette,cursive;
     font-weight: lighter;
     word-spacing: 0.5em;
 }
@@ -141,6 +141,10 @@ li section {
     padding: 1em;
     margin: 0;
     display: none;
+}
+
+.jobsummary p{
+    font-size:1em;
 }
 
 section p{

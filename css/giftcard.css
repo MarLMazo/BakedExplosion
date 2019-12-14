@@ -20,10 +20,10 @@ header {
     text-align: center;
 }
 
-    header #logo {
-        width: 150px;
-        height: auto;
-    }
+header #logo {
+    width: 150px;
+    height: auto;
+}
 
 .logo-wrap {
     flex: 1 0 0;
@@ -58,17 +58,22 @@ header ul li a {
 }
 p{
     text-align:center;
-    font-family:'Sulphur Point';
+    font-family:Raleway;
 }
 
 h2, h3 {
     text-align: center;
     text-transform: uppercase;
-    font-family: Kurale;
     font-weight: lighter;
     word-spacing: 0.5em;
     padding:10px;
     margin:2% 25% 2% 25%;
+}
+h2{
+    font-family:Courgette,cursive;
+}
+h3 {
+    font-family: Kurale;
 }
 
 /* resize images */

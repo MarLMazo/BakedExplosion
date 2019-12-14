@@ -21,11 +21,10 @@ header {
     display: flex;
     flex-flow: row wrap;
     text-align: center;
-    z-index: 5;
 }
 
 header #logo{
-    width:150px;
+    width:90%;
     height:auto;
 }
 
@@ -33,9 +32,9 @@ header #logo{
     flex: 1 0 0;  
 }
 
-.litem,.ritem {
+.litem, .ritem {
     flex: 3 0 0;
-    align-self: flex-end;
+    align-self: center;
 }
 
 .litem {
