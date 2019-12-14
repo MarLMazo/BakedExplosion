@@ -1,7 +1,7 @@
 /** CAROUSEL **/
 .carousel{
-    max-width: 1200px;
-    height:50vh;
+    max-width: 100%;
+    height:80vh;
     margin: 0 auto;
     overflow: hidden;
     position:relative;
@@ -29,7 +29,7 @@
 
 #prev{
     width:10%;
-    height:100%;
+    height:80%;
     position:absolute;
     z-index:10;
     left:0.5px;
@@ -41,18 +41,37 @@
     width:10%;
     height:100%;
     position:absolute;
-    z-index:10;
+    z-index:1;
     right:0.5px;
     color:black;
     opacity: 0.4;
     font-weight:bold;
 }
 
+.carousel-items{
+    position:absolute;
+    top: 60%;
+    left: 30%;
+    
+
+}
+
+.carousel-items a{
+    text-decoration: none;
+    color:white;
+    padding:1em;
+    margin:1em;
+    font-size: 1.5em;
+    border-radius: 5%;
+    background-color: rgba(0,0,0,0.4);
+}
+
+
 
 /*best seller css*/
 .best_seller {
     padding-top: 1em;
-    max-width:1200px;
+    max-width:100%;
     margin:0 auto;
     background: #FFD3B5;
 }

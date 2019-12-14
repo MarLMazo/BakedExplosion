@@ -1,6 +1,24 @@
+
+@import url('https://fonts.googleapis.com/css?family=Courgette|Montserrat|Raleway|Sulphur+Point&display=swap');
 *{
     padding:0;
     margin:0;
+}
+h1, h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Courgette', cursive;
+    letter-spacing: 0.2em;
+    font-size: 1.5em;
+    padding-bottom: 1em;
+}
+
+p,label {
+    font-family: 'Raleway',sens-serif;
+}
+
+body{
+    background-color: #D0ECC5;
 }
 
 #outer_container{
@@ -81,6 +99,11 @@
     padding:1em;
     width:75%;
     border-style:none;
+}
+#thank_msg{
+    padding: 1em;
+    font-size: 2em;
+    font-family: 'Raleway',sens-serif;
 }
 
 #location_button{

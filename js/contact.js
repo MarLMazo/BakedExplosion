@@ -2,8 +2,9 @@ window.onload = main;
 function main(){
     var Thank_msg = document.getElementById('thank_msg');
     var Email_regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    var Location_button = document.getElementById('location_button');
     Thank_msg.style.display = "none";
-    addEventListener('click',goto);
+    Location_button.addEventListener('click',goto);
     function goto(){
         location.replace("locations.html");
     }

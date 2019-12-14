@@ -1,5 +1,6 @@
 //start of carousel
 const carousel_slide = document.querySelector('.carousel-slide');
+//creating a nodelist
 const carousel_img = document.querySelectorAll('.carousel-slide img')
 
 const prev_btn = document.querySelector('#prev');
@@ -10,21 +11,32 @@ const size = carousel_img[0].clientWidth;
 
 
 carousel_slide.style.transform = 'translateX(' + (-size * counter) + 'px)';
-console.log(carousel_slide.style.transform);
+window.onload = main;
+function main(){
+    //automatic switching of images in carousel
+    setInterval(function(){
+        if(counter >= carousel_img.length -1) return;
+        carousel_slide.style.transition = 'transform 0.4s ease-in-out';
+        counter++;
+        carousel_slide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+    }, 3000);
+}
 
+//Switch next image
 next_btn.addEventListener('click',()=>{
     if(counter >= carousel_img.length -1) return;
     carousel_slide.style.transition = 'transform 0.4s ease-in-out';
     counter++;
     carousel_slide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 })
-
+//Switch prev image
 prev_btn.addEventListener('click',()=>{
     if(counter <= 0) return;
     carousel_slide.style.transition = 'transform 0.4s ease-in-out';
     counter--;
     carousel_slide.style.transform = 'translateX(' + (-size * counter) + 'px)'
 })
+
 
 carousel_slide.addEventListener('transitionend', () =>{
     if(carousel_img[counter].id === 'lastclone'){
