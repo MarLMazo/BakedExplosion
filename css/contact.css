@@ -81,7 +81,7 @@ body{
     width: 50%;
     height:2em;
     padding:0.5em;
-    background-color: rgb(221, 208, 208);
+    background-color: rgb(170, 162, 162);
     border-style: none;
 }
 #message_field{
@@ -92,7 +92,7 @@ body{
     height:150px;
     width:75%;
     padding:0.5em;
-    background-color: rgb(221, 208, 208);
+    background-color: rgb(170, 162, 162);
     border-style:none;
 }
 .submit_button{
@@ -112,5 +112,5 @@ body{
     height:30px;
     border-radius: 5%;
     border-style: none;
-    background-color: rgb(215, 128, 223);
+    background-color: #FF8C94;
 }
