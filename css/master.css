@@ -17,10 +17,11 @@ header, footer {
 }
 
 /** HEADER **/
-header{
+header {
     display: flex;
     flex-flow: row wrap;
     text-align: center;
+    z-index: 5;
 }
 
 header #logo{
@@ -58,7 +59,45 @@ header ul li a{
     font-size:1.7em;
     color:#000000;
     font-weight:100;
+    padding:0.2em 0.5em 0.2em 0.5em;
 }
+
+a:hover {
+    cursor: pointer;
+    background-color: #FF8C94;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #D0ECC5;
+    width:100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #000000;
+    font-size: 1.2em;
+    padding-bottom:0.5em;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #A8E6CE;
+    padding:10px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 
 /** FOOTER **/
 .footer_main {

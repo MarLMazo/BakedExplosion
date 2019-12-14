@@ -1,0 +1,191 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <meta charset="utf-8" />
+    <meta content="page having gift cards for the baked explosion bakery website." />
+    <script src="js/giftcard.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Courgette|Kurale|Montserrat|Raleway|Sulphur+Point&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/master.css" type="text/css" />
+    <link rel="stylesheet" href="css/giftcard.css" />
+    <title>Gift Cards</title>
+</head>
+<body>
+    <header>
+        <div class="logo-wrap">
+            <img id="logo" src="images/logo.png" alt="logo of Baked Explosion." />
+        </div>
+        <ul class="litem">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li class="dropdown">
+                <a class="submenu">Specials</a>
+                <ul class="dropdown-content">
+                    <li><a href="specials.html">Daily Offers</a></li>
+                    <li><a href="giftcards.html">Gift Card</a></li>
+                    <li><a href="contest.html">Play to Win</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="ritem">
+            <li><a href="booking.html">Booking</a></li>
+            <li><a href="about-us">About Us</a></li>
+            <li class="dropdown">
+                <a href="contact-us" class="submenu">Contact Us</a>
+                <ul class="dropdown-content">
+                    <li><a href="locations.html">Our Location</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <p>Give the gift of Sweetness! Whether your loved one is dreaming of an explosion gift or having a sweet tooth, your gift will make their dreams come true! Our Gift Cards can be used for shopping in baked explosion store or on our website. Surprise someone with the gift they really want!</p>
+        <p>Choose your favourite design, add a personal message, pick a value and send a little bit of Love with affection and baked explosion.</p>
+        <h2>Select the design of the card</h2>
+        <div class="row">
+            <section class="column">
+                <img id="img1" src="images/gift_cards/gift_card1.png" alt="gift card image" />
+                
+            </section>
+            <section class="column">
+                <img id="img2" src="images/gift_cards/gift_card2.png" alt="gift card image" />
+                
+            </section>
+            <section class="column">
+                <img id="img3" src="images/gift_cards/gift_card3.png" alt="gift card image" />
+                
+            </section>
+            <section class="column">
+                <img id="img4" src="images/gift_cards/gift_card4.png" alt="gift card image" />
+                
+            </section>
+            <section class="column">
+                <img id="img5" src="images/gift_cards/gift_card5.png" alt="gift card image" />
+                
+            </section>
+        </div>
+
+        <section>
+            <h3>Customize Your Card</h3>
+        </section>
+        <form id="myForm" action="gift_card.html" method="post">
+            <section id="section-left">
+                <div>
+                    <label>Sender name </label>
+                    <input id="user_msg" type="text" placeholder="Alexa Green" />
+                </div>
+                <div>
+                    <label>Amount</label>
+                    <input type="text" placeholder="$50" />
+                </div>
+                <div id="amount">
+                    <label>Choose an amount or enter a custom amount</label>
+                    <button class="amt" type="button">$25</button>
+                    <button class="amt" type="button">$50</button>
+                    <button class="amt" type="button">$100</button>
+                    <button class="amt" type="button">$250</button>
+                </div>
+                <div>
+                    <label>Message (optional)</label>
+                    <textarea placeholder="Add a personal message"></textarea>
+                </div>
+
+            </section>
+            <section id="section-right">
+                <div>
+                    <label>Recipient Name</label>
+                    <input id="reciever_name" type="text" placeholder="Full Name" />
+                </div>
+                <div>
+                    <label>Greetings on Card (or Name)</label>
+                    <input id="cardmsg" type="text" name="card_msg" placeholder="Thank You Krishna" />
+                </div>
+                <div>
+                    <label>Recipient Email</label>
+                    <input type="email" placeholder="recipient@email.com" />
+                </div>
+                <div>
+                    <label>Recipient Phone</label>
+                    <input type="text" placeholder="+(111)111-1111" />
+                </div>
+                <div>
+                    <label id="delivery-option">Delivery options</label>
+                    <button type="button">Email</button>
+                    <button type="button">SMS</button>
+                </div>
+            </section>
+
+
+            <section>
+                <div class="container">
+                    <section>
+                        <button id="demo" type="button">Click Here to See the Card</button>
+                    </section>
+                    <img id="bigimage" src="images/gift_cards/gift_card1.png" alt="gift card image" />
+                    <textarea id="user_txt" name="usertxt" value="Thank You"></textarea>
+                    <img id="backside" src="images/gift_cards/giftcard_backside.png" alt="backside of the gift card." />
+                </div>
+                <div id="check-out">
+                    <button type="submit">Add To Bag</button>
+                </div>
+            </section>
+        </form>
+        <div>
+            <p>
+                All gift card purchases are secure.Customer Support, call or SMS: 1-123-123-1230 | Baked Explosions Online Inc. All Rights Reserved
+            </p>
+        </div>
+    </main>
+    <footer>
+        <div class="footer_main">
+            <section id="section-1">
+                <ul>
+                    <li class="col_head">Shop</li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="locations.html">Visit Us</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                </ul>
+            </section>
+            <section id="section-2">
+                <ul>
+                    <li class="col_head">We are available</li>
+                    <li>Mon-Friday : 8am - 8pm</li>
+                    <li>Saturday : 8am - 7pm</li>
+                    <li>Sunday : 9am - 6pm</li>
+                    <li>Holiday hours may vary.!</li>
+                </ul>
+            </section>
+            <section id="section-3">
+                <ul>
+                    <li class="col_head">Visit Us</li>
+                    <li>#123 Jump Street,</li>
+                    <li>Toronto, ON, A1A 1A1</li>
+                    <li>contactus@bakedexplosion.com</li>
+                    <li>+1(123)456-7890</li>
+                </ul>
+            </section>
+            <section id="section-4">
+                <form>
+                    <ul>
+                        <li class="col_head"><label>STAY UPDATED</label></li>
+                        <li><input type="email" placeholder="Email Address" /></li>
+                        <li><button type="submit">SUBSCRIBE NOW</button></li>
+                    </ul>
+                </form>
+            </section>
+        </div>
+        <div id="last_row">
+            <p>&copy; 2019 by Baked Explosion and team</p>
+            <div id="smedia_icons">
+                <img src="images/social_media_icons/facebook.png" alt="facebook icon link to facebook account of baked explosions." />
+                <img src="images/social_media_icons/instagram.png" alt="instagram icon link to facebook account of baked explosions." />
+                <img src="images/social_media_icons/snapchat.png" alt="snapchat icon link to facebook account of baked explosions." />
+                <img src="images/social_media_icons/youtube.png" alt="youtube icon link to facebook account of baked explosions." />
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery-3.4.1.min.js"></script>
+</body>
+</html>
