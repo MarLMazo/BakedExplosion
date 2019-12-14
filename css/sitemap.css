@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css?family=Courgette|Montserrat|Raleway|Sulphur+Point&display=swap');
+
+/** RESET CSS**/
+ol, ul, li {
+  list-style: none;
+  
+}
+
+a {
+	margin:0;
+	padding:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+	text-decoration: none;
+	color:initial;
+}
+
+main ul, main li{
+  margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/*************/
+
+#main{
+  font-family: 'Raleway', sans-serif;
+  margin: 2em;
+  
+}
+.hidden{
+  position: absolute;
+  left: -10000px;
+}
+
+h1{
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Courgette', cursive;
+  letter-spacing: 0.2em;
+  font-size: 1.5em;
+  padding: 1em;
+  font-weight: bolder;
+  background-color: rgba(125,125,125,0.5);
+  width: 60%;
+  margin: 0 auto;
+  transform: translateY(20px);
+
+}
+
+
+span+ ul{
+  margin-left: 2em;
+  position: relative;
+  
+}
+
+.main-content span{
+  cursor: pointer;
+}
+.iconfolder::before{
+  color: 	rgb(0, 121, 158);;
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 900;
+  content: "\f07b";
+  position: relative;
+
+ 
+ 
+}
+.iconOpenfolder::before{
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 900;
+  content: "\f07c";
+  color: #FF8C94
+ 
+}
+
+#main ul > li::before{
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 900;
+  /* content: "\f142 \f141"; */
+  content:"\f3bf";
+  position: absolute;
+  /* font-size: 12px; */
+  margin-left: -30px;
+  display: inline-block;
+  transform: rotate(90deg);
+}
+#main{
+  width: 50%;
+  background-color: rgb(255, 211, 181, 0.6);
+  margin:1em auto;
+  border-radius:10px;
+}
+#main-section{
+
+  display: flex;
+  flex: row wrap;  
+  margin-bottom: 1em;
+}
+
+.main-content, .details{
+  flex: 1 0 0;
+  /* border: 1px solid black; */
+  padding: 3em 0.5em;
+  margin: 1em;
+  font-size: 1.2em;
+}
+
+
+h2{
+  /* text-align: center; */
+  font-weight: 700;
+  font-size: 1.2em;
+  margin: 0;
+  padding-bottom: 0.5em;
+}
+.descrip a{
+  display: block;
+  margin-top: 1em;
+}
+.details{
+  align-items: center;
+}
+.details span{
+  font-weight: 700;
+}
+#main a{
+  color: #CB0112;
+  font-style: italic;
+}
+#main a:hover{
+  text-decoration: underline;
+}
+/* h1{
+  background-color: rgba(0,0,0,0.6);
+  width: 60%;
+  margin: auto;
+} */

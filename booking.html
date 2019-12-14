@@ -12,26 +12,39 @@
   </head>
   <body>
     <header>
-        <div class="logo-wrap">
-            <img id="logo" src="images/logo.png" alt="logo of Baked Explosion." />
-        </div>
-        <ul class="litem">
-            <li><a href="index-baked-explosions.html">Home</a></li>
-            <li><a href="menu-baked-explosions.html">Menu</a></li>
-            <li><a href="#">Specials</a></li>
-        </ul>
-        <ul class="ritem">
-            <li><a href="booking-baked-explosions.html">Booking</a></li>
-            <li><a href="about-us-baked-explosions.html">About Us</a></li>
-            <li><a href="contact-us-baked-explosions.html">Contact Us</a></li>
-        </ul>
+      <div class="logo-wrap">
+          <img id="logo" src="images/logo.png" alt="logo of Baked Explosion." />
+      </div>
+      <ul class="litem">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li class="dropdown">
+              <a class="submenu">Specials</a>
+              <ul class="dropdown-content">
+                  <li><a href="specials.html">Daily Offers</a></li>
+                  <li><a href="giftcards.html">Gift Card</a></li>
+                  <li><a href="contest.html">Play to Win</a></li>
+              </ul>
+          </li>
+      </ul>
+      <ul class="ritem">
+          <li><a href="booking.html">Booking</a></li>
+          <li><a href="about-us">About Us</a></li>
+          <li class="dropdown">
+              <a href="contact-us" class="submenu">Contact Us</a>
+              <ul class="dropdown-content">
+                  <li><a href="locations.html">Our Location</a></li>
+                  <li><a href="careers.html">Careers</a></li>
+              </ul>
+          </li>
+      </ul>
     </header>
     <main id="main">
       <h1>Book an Event with Us</h1>
       <div class="bookInfo">
         <p>Celebrate sweetest moment's with Baked Explosion! From wedding shows, baby showers to birthdays, graduations, company event, our event team will work with you to personalized desserts/ treats for you to match the them and budget of your event.</p>
         <p>To help best assist you with your event needs, we ask that you click the button below to fill the form with additional information about your event.</p>
-        <p>A member of our events team will respond to your email within three business days. Please note that our business hours are Monday-Friday, 9:00 am - 6:00pm. If you have urgent request, please call us at 1-888-888-8888</p>
+        <p>A member of our events team will respond to your email within three business days. Please note that our business hours are Monday-Friday, 11:00 am - 12:00am. If you have urgent request, please call us at (437) 432 2561</p>
         <p>Here are some of the event we accomplished.</p>
       </div>
       <div class="bookEvents">
@@ -64,7 +77,7 @@
               <div>
                 <label for="resReserv">Location*</label>
                 <!-- <input type="text" id="resReserv" name="resReserv" class="customerInput" placeholder="Enter Location"/> -->
-                <select id="resReserv" id="resReserv" name="resReserv" class="customerInput">
+                <select id="resReserv" name="resReserv" class="customerInput">
                   <option value="" disabled selected hidden>Enter a Location</option>
                   <option value="Humber College North Campus">Humber College North Campus</option>
                   <option value="Humber College Lakeshore">Humber College Lakeshore </option>
@@ -72,8 +85,7 @@
               </div>
               <div>
                 <label for="numReserv">Guests*</label>
-                <select id="numReserv" class="customerInput">
-                  <option value="" disabled selected hidden></option>
+                <select id="numReserv" class="customerInput">                  
                   <option value="1">1</option>
                   <option value="2">2</option>
                   <option value="3">3</option>
@@ -89,12 +101,11 @@
               </div>
               <div>
                 <label for="dateReserv">Date*</label>
-                <input type="date" id="dateReserv" class="customerInput" placeholder="yyyy-mm-dd"/>
+                <input type="date" id="dateReserv" name="dateReserv" class="customerInput"/>
               </div>
               <div>
                 <label for="timeReserv">Time*</label>
-                <select id="timeReserv" class="customerInput">
-                    <option value="" disabled selected hidden></option>
+                <select id="timeReserv" class="customerInput">                   
                     <option value="11:00 am">11:00 am</option>
                     <option value="11:30 am">11:30 am</option>
                     <option value="12:00 pm">12:00 pm</option>
@@ -125,7 +136,7 @@
                 </select>
               </div>
               <div>
-                <button type="submit"id="BtnRestDet" class="BtnBooking"><span>Find a table</span></button>
+                <button type="submit" id="BtnRestDet" class="BtnBooking"><span>Find a table</span></button>
               </div>           
             </form>
           <div>
@@ -135,10 +146,7 @@
         </div>
         <div class="showForm">
           <div class="Det-s">
-            <!-- <div id="map">        
-            </div> -->
-            <div id="reservationDetails">
-              
+            <div id="reservationDetails">           
                 <p></p>
                 <button id="BtnConfirmDet" class="BtnBooking"><span>Make a Reservation</span></button>
                 
@@ -188,55 +196,55 @@
 
     <footer>
       <div class="footer_main">
-        <section id="section-1">
-            <ul>
-                <li class="col_head">Shop</li>
-                <li><a href="index-baked-explosions.html">Home</a></li>
-                <li>Menu</li>
-                <li><a href="locations-baked-explosions.html">Visit Us</a></li>
-                <li><a href="careers-baked-explosions.html">Careers</a></li>
-            </ul>
-        </section>
-        <section id="section-2">
-            <ul>
-                <li class="col_head">We are available</li>
-                <li>Mon-Friday : 8am - 8pm</li>
-                <li>Saturday : 8am - 7pm</li>
-                <li>Sunday : 9am - 6pm</li>
-                <li>Holiday hours may vary.!</li>
-            </ul>
-        </section>
-        <section id="section-3">
-            <ul>
-                <li class="col_head">Visit Us</li>
-                <li>#123 Jump Street,</li>
-                <li>Toronto, ON, A1A 1A1</li>
-                <li>contactus@bakedexplosion.com</li>
-                <li>+1(123)456-7890</li>
-            </ul>
-        </section>
-        <section id="section-4">
-            <form>
-                <ul>
-                    <li class="col_head"><label>STAY UPDATED</label></li>
-                    <li><input type="email" placeholder="Email Address" /></li>
-                    <li><button type="submit">SUBSCRIBE NOW</button></li>
-                </ul>
-            </form>
-        </section>
+          <section id="section-1">
+              <ul>
+                  <li class="col_head">Shop</li>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="menu.html">Menu</a></li>
+                  <li><a href="locations.html">Visit Us</a></li>
+                  <li><a href="careers.html">Careers</a></li>
+              </ul>
+          </section>
+          <section id="section-2">
+              <ul>
+                  <li class="col_head">We are available</li>
+                  <li>Mon-Friday : 8am - 8pm</li>
+                  <li>Saturday : 8am - 7pm</li>
+                  <li>Sunday : 9am - 6pm</li>
+                  <li>Holiday hours may vary.!</li>
+              </ul>
+          </section>
+          <section id="section-3">
+              <ul>
+                  <li class="col_head">Visit Us</li>
+                  <li>#123 Jump Street,</li>
+                  <li>Toronto, ON, A1A 1A1</li>
+                  <li>contactus@bakedexplosion.com</li>
+                  <li>+1(123)456-7890</li>
+              </ul>
+          </section>
+          <section id="section-4">
+              <form>
+                  <ul>
+                      <li class="col_head"><label>STAY UPDATED</label></li>
+                      <li><input type="email" placeholder="Email Address" /></li>
+                      <li><button type="submit">SUBSCRIBE NOW</button></li>
+                  </ul>
+              </form>
+          </section>
       </div>
       <div id="last_row">
-        <p>&copy; 2019 by Baked Explosion and team</p>
-        <div id="smedia_icons">
-            <img src="images/social_media_icons/facebook.png" alt="facebook icon link to facebook account of baked explosions." />
-            <img src="images/social_media_icons/instagram.png" alt="instagram icon link to facebook account of baked explosions." />
-            <img src="images/social_media_icons/snapchat.png" alt="snapchat icon link to facebook account of baked explosions." />
-            <img src="images/social_media_icons/youtube.png" alt="youtube icon link to facebook account of baked explosions." />
-        </div>
+          <p>&copy; 2019 by Baked Explosion and team</p>
+          <div id="smedia_icons">
+              <img src="images/social_media_icons/facebook.png" alt="facebook icon link to facebook account of baked explosions." />
+              <img src="images/social_media_icons/instagram.png" alt="instagram icon link to facebook account of baked explosions." />
+              <img src="images/social_media_icons/snapchat.png" alt="snapchat icon link to facebook account of baked explosions." />
+              <img src="images/social_media_icons/youtube.png" alt="youtube icon link to facebook account of baked explosions." />
+          </div>
       </div>
     </footer>
         
-        <script src="js/booking.js"></script>
+    <script src="js/booking.js"></script>
      
        <!-- <script
        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCuOQ68k68LDVsGyeNc19PJnbimzG5qStY&callback=initMap">
