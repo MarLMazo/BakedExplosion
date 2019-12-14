@@ -73,3 +73,15 @@ function pageReady() {
         bigImage.src = image5.src;
     }
 }
+
+//<a href="https://www.freepik.com/free-photos-vectors/bakery">Bakery photo created by onlyyouqj - www.freepik.com</a>
+
+//    <a href="https://www.freepik.com/free-photos-vectors/background">Background photo created by freepik - www.freepik.com</a>
+
+//    <a href="https://www.freepik.com/free-photos-vectors/background">Background photo created by valeria_aksakova - www.freepik.com</a>
+
+//    <a href="https://www.freepik.com/free-photos-vectors/food">Food photo created by lifeforstock - www.freepik.com</a>
+
+//Some images are created by krishna shah in adobe illustrator.
+//Some images are from freepik.com
+//some js reference code if from inclass examples.
