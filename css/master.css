@@ -131,6 +131,16 @@ footer ul li{
     font-weight:lighter;
 }
 
+footer a {
+    text-decoration: none;
+    color: #000000;
+}
+
+footer a:hover{
+    text-decoration:underline;
+    background:transparent;
+}
+
 footer input[type="email"] {
     background:transparent;
     border:1px solid #000000;
