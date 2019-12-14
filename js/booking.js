@@ -138,11 +138,13 @@ function Booking(){
         errorMsg[i].style.display = "none";
       }
     }
-
-    reservationSummary.innerHTML = "Congratulation " +  custReserv[0].value +custReserv[1].value+ "!";
+    reservationSummary.innerHTML ="<h2>Confirmed!</h2>"
+    reservationSummary.innerHTML += "<p>Congratulation! " +  custReserv[0].value +custReserv[1].value+ "!";
     reservationSummary.innerHTML += "Your Reservation on " +resReserv[0].value+ " for "+ resReserv[1].value;
-    reservationSummary.innerHTML += " on "+dateReserv +" at " +resReserv[3].value+ " has been received!";
-    
+    reservationSummary.innerHTML += " on "+dateReserv +" at " +resReserv[3].value+ " has been received!</p>";
+    reservationSummary.innerHTML +="<p> An email with the details of your reservation will be sent to the email address provided.</p>";
+    reservationSummary.innerHTML += "<a href=\"index.html\">&lt; &lt; GO BACK</a>";
+
     carosel.style.display="none";
     hideForm();
     showForm[step].style.display="block";

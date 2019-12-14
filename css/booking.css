@@ -15,9 +15,8 @@ a {
 }
 /*************/
 
-.reser-cont>*, .reser-cont>*::after,.reser-cont>*::before, 
-#main>*, #main>*::after, #main>*::before {
-  font-family: 'Sulphur Point', sans-serif;
+.reser-cont, #main{
+  font-family: 'Raleway', sans-serif;
 }
 .errorMsg{
   color: red;
@@ -343,4 +342,7 @@ figure{
 #BookUs:hover{
   background-color:#FB8C94;
   color: #ffff;
+} 
+#reservationSummary a{
+  color: rgb(223, 48, 59);
 }
